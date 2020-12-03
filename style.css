@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding-top: 50px;
+  background-color: rgb(206, 201, 201);
+  font-family: sans-serif, Arial;
+}
+.calculator {
+  display: grid;
+  margin: 0 auto;
+  max-width: 400px;
+  min-height: 500px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(120px, auto) repeat(5, 1fr);
+  grid-gap: 10px;
+  border: 1px solid navy;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: pink;
+}
+.calculator > button {
+  background-color: navy;
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+}
+.calculator > button:hover {
+  background-color: rgba(0, 0, 128, 0.75);
+}
+.calculator > button:nth-child(2),
+.calculator > button:nth-child(17) {
+  grid-column: span 2;
+}
+.output {
+  grid-column: 1 / -1;
+  background-color: navy;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 10px;;
+}
+.output .previous {
+  font-size: 20px;
+}
+.output .current {
+  font-size: 35px;
+}
+
+
+/* body {
+  padding-top: 50px;
+  background-color: rgb(206, 201, 201);
+}
+.calculator {
+  border: 1px solid navy;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: pink;
+  max-width: 400px;
+  margin: 0 auto;
+}
+input {
+  width: 95%;
+  border: 1px solid navy;
+  margin-bottom: 10px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  text-align: right;
+  font-size: 40px;
+  color: navy;
+  padding: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.calc-btn {
+  background-color: navy;
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.calc-btn:nth-child(1),
+.calc-btn:nth-child(16) {
+  grid-column: span 2;
+} */
